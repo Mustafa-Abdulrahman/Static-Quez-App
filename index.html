@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywods" content="HTML, CSS, JS, ITI" />
+    <meta name="description" content="Examination System Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/navstyle.css" />
+    <link rel="stylesheet" href="./css/loginStyle.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------ -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
+        <ul class="links">
+          <li><a href="signup.html">Sign Up</a></li>
+          <li><a class="active" href="index.html">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ------------------------------------------ -->
+    <header>
+      <div class="container">
+        <div class="data">
+          <h1>Student Login</h1>
+          <a href="signup.html">Sign Up</a>
+          <a class="active" href="signIn.html">> Sign In</a>
+        </div>
+        <div class="imgs">
+          <img src="./imgs/breadcrumb_shape01.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape02.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape03.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape04.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape05.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ------------------------------------------ -->
+    <div class="signin-form sign">
+      <div class="container">
+        <div class="content">
+          <h2>Welcome Back</h2>
+          <p>
+            Hey there! Ready to log in? Just enter your username and password
+            below and you'll be back in action in no time. Let's go!
+          </p>
+          <div class="LetsGo">
+            <span>Go</span>
+          </div>
+          <form action="#" method="get">
+            <div class="div-sec">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="div-sec">
+              <label for="pass">Password</label>
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                placeholder="Password"
+              />
+              <span></span>
+            </div>
+            <div class="div-two">
+              <div class="remember">
+                <input type="checkbox" id="rem-me" />
+                <label for="rem-me">Remember Me</label>
+              </div>
+              <a href="#">Forget Password?</a>
+            </div>
+            <input type="submit" value="Let's Go" />
+            <div class="sign-up">
+              <span>Don't have an account? </span
+              ><a href="signup.html">Sign Up Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/signin.js"></script>
+  </body>
+</html>

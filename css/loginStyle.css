@@ -1,0 +1,228 @@
+:root {
+  --font-color: rgb(31, 31, 31);
+  --main-color: #2b3499;
+  --main-color-opacity: #2b34991a;
+  --main-padding: 1rem;
+  --sec-padding: 0.8rem;
+  --main-radius: 8px;
+  --main-transition: 0.2s;
+  --main-shadow: 0 0 20px -3px rgba(98, 98, 98, 0.276);
+  --sec-shadow: 0 0 20px -3px rgba(98, 98, 98, 0.164);
+}
+
+header {
+  width: 100%;
+  height: 35vh;
+  background-color: var(--main-color-opacity);
+}
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+}
+header .container .data a {
+  color: var(--font-color);
+}
+header .container .data a.active {
+  color: var(--main-color);
+}
+header .container .imgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header .container .imgs img {
+  width: 50px;
+  z-index: -1;
+  opacity: 0.6;
+}
+header .container .imgs img:nth-child(1) {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+header .container .imgs img:nth-child(2) {
+  position: absolute;
+  top: 13%;
+  right: 0;
+}
+header .container .imgs img:nth-child(3) {
+  position: absolute;
+  top: 59%;
+  right: -49px;
+}
+header .container .imgs img:nth-child(4) {
+  position: absolute;
+  top: 20%;
+  right: 305px;
+}
+header .container .imgs img:nth-child(5) {
+  position: absolute;
+  top: 50%;
+  right: -108px;
+  transform: translateY(-50%);
+  width: 447px;
+}
+@media (max-width: 768px) {
+  header .container .imgs img:nth-child(3) {
+    right: 0px;
+  }
+  header .container .imgs img:nth-child(5) {
+    display: none;
+  }
+  header .container .imgs img:nth-child(4) {
+    right: 205px;
+  }
+}
+
+/* ----------------------------- log in section */
+.sign {
+  padding: 80px 0;
+}
+.sign .container {
+  position: relative;
+}
+.sign .container .content {
+  width: 550px;
+  padding: 2rem;
+  border-radius: var(--main-radius);
+  border: 2px solid var(--main-color-opacity);
+  box-shadow: var(--sec-shadow);
+  background-color: #eee;
+  margin: 0 auto;
+}
+.sign .container .content h2 {
+  color: var(--main-color);
+  margin-bottom: 8px;
+}
+.sign .container .content p {
+  margin-bottom: var(--main-padding);
+}
+.sign .container .content .LetsGo {
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.sign .container .content .LetsGo::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 52%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.sign .container .content .LetsGo span {
+  position: relative;
+  z-index: 1;
+  padding: 6px;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.sign .container .content form {
+  margin-top: var(--main-padding);
+}
+.sign .container .content form .div-sec {
+  margin-bottom: var(--main-padding);
+}
+.sign .container .content form .div-sec label {
+  margin-bottom: 8px;
+  display: block;
+}
+.sign .container .content form .div-sec input {
+  width: 100%;
+  border-radius: var(--main-radius);
+  padding: var(--sec-padding);
+  border: none;
+  outline: none;
+}
+.sign .container .content form .div-sec input:focus::placeholder {
+  opacity: 0;
+}
+.sign .container .content form .div-two {
+  display: flex;
+  align-items: Center;
+  justify-content: space-between;
+  margin-bottom: var(--main-padding);
+}
+.sign .container .content form .div-two .remember {
+}
+.sign .container .content form .div-two .remember input {
+}
+.sign .container .content form .div-two .remember label {
+}
+.sign .container .content form .div-two a {
+}
+.sign .container .content form input[type="submit"] {
+  padding: var(--sec-padding);
+  width: 100%;
+  border-radius: var(--main-radius);
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: var(--main-transition);
+  margin-bottom: var(--main-padding);
+  cursor: pointer;
+}
+.sign .container .content form input[type="submit"]:active {
+  box-shadow: 6px 6px 0 #a2a2a2;
+}
+.sign .container .content form .sign-up {
+  text-align: center;
+}
+.div-sec span {
+  font-size: 0.8rem;
+  margin-left: 12px;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+  .sign .container .content {
+    width: 100%;
+  }
+}
+
+/* ---------------- pop up */
+.popUpNew {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #2b349981;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: none;
+  opacity: 0.7;
+  transform: scale(0.5);
+  animation: popUp 0.5s linear forwards;
+}
+.popUpNew .content {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes popUp {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

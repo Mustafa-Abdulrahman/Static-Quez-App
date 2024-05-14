@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywods" content="HTML, CSS, JS, ITI" />
+    <meta name="description" content="Examination System Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/navstyle.css" />
+    <link rel="stylesheet" href="./css/loginStyle.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------ -->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
+        <ul class="links">
+          <li><a class="active" href="signup.html">Sign Up</a></li>
+          <li><a href="index.html">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ------------------------------------------ -->
+    <header>
+      <div class="container">
+        <div class="data">
+          <h1>Student Sign Up</h1>
+          <a class="active" href="signup.html">Sign Up</a>
+          <a href="index.html">> Sign In</a>
+        </div>
+        <div class="imgs">
+          <img src="./imgs/breadcrumb_shape01.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape02.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape03.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape04.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape05.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ------------------------------------------ -->
+    <div class="signup-form sign">
+      <div class="container">
+        <div class="content">
+          <h2>Welcome, You Are In Right Place</h2>
+          <p>Please make sure that all data entered is correct</p>
+          <div class="LetsGo">
+            <span>Go</span>
+          </div>
+          <form action="#" method="get">
+            <div class="div-sec">
+              <label for="username">User Name</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Mustafa Abdulrahman"
+              />
+              <span></span>
+            </div>
+            <div class="div-sec">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <span></span>
+            </div>
+            <div class="div-sec firstPass">
+              <label for="pass">Password</label>
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                placeholder="Password"
+              />
+              <span></span>
+            </div>
+            <div class="div-sec secoundPass">
+              <label for="pass"> Re Password</label>
+              <input
+                type="password"
+                id="RePass"
+                name="RePass"
+                placeholder="Password"
+              /><span></span>
+            </div>
+
+            <input type="submit" value="Sign Up" />
+            <div class="sign-up">
+              <span>Already have an account? </span
+              ><a href="index.html">Sign In Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popUpNew">
+      <div class="content">
+        <img src="./imgs/valid-koharotv.gif" alt="" />
+      </div>
+    </div>
+    <script type="module" src="./js/signUp.js"></script>
+  </body>
+</html>

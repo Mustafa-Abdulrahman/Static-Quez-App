@@ -1,0 +1,120 @@
+[
+  {
+    "type": "html",
+    "title": "HTML stands for",
+    "answer_1": "HighText Machine Language",
+    "answer_2": "HyperText and links Markup Language",
+    "answer_3": "HyperText Markup Language",
+    "answer_4": "None of these",
+    "trueAnswer": "HyperText Markup Language"
+  },
+  {
+    "type": "html",
+    "title": "Which of the following element is responsible for making the text bold in HTML?",
+    "answer_1": "&lt;pre&gt;",
+    "answer_2": "&lt;a&gt;",
+    "answer_3": "&lt;b&gt;",
+    "answer_4": "&lt;br&gt;",
+    "trueAnswer": "<b>"
+  },
+  {
+    "type": "html",
+    "title": "The correct sequence of HTML tags for starting a webpage is -",
+    "answer_1": "Head, Title, HTML, body",
+    "answer_2": "HTML, Body, Title, Head",
+    "answer_3": "HTML, Head, Title, Body",
+    "answer_4": "HTML, Head, Title, Body",
+    "trueAnswer": "HTML, Head, Title, Body"
+  },
+  {
+    "type": "html",
+    "title": "Which of the following tag is used for inserting the largest heading in HTML?",
+    "answer_1": "&lt;h3&gt;",
+    "answer_2": "&lt;h1&gt;",
+    "answer_3": "&lt;h5&gt;",
+    "answer_4": "&lt;h6&gt;",
+    "trueAnswer": "<h1>"
+  },
+  {
+    "type": "html",
+    "title": "Which of the following tag is used to insert a line-break in HTML?",
+    "answer_1": "&lt;br&gt;",
+    "answer_2": "&lt;a&gt;",
+    "answer_3": "&lt;pre&gt;",
+    "answer_4": "&lt;b&gt;",
+    "trueAnswer": "<br>"
+  },
+
+  {
+    "type": "html",
+    "title": "How to create an unordered list (a list with the list items in bullets) in HTML?",
+    "answer_1": "&lt;ul&gt;",
+    "answer_2": "&lt;ol&gt;",
+    "answer_3": "&lt;li&gt;",
+    "answer_4": "&lt;i&gt;",
+    "trueAnswer": "<ul>"
+  },
+  {
+    "type": "html",
+    "title": "Which character is used to represent the closing of a tag in HTML?",
+    "answer_1": "\\",
+    "answer_2": "!",
+    "answer_3": "/",
+    "answer_4": ".",
+    "trueAnswer": "/"
+  },
+  {
+    "type": "css",
+    "title": "What is CSS?",
+    "answer_1": "CSS is a style sheet language",
+    "answer_2": "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+    "answer_3": "CSS is the language used to style the HTML documents",
+    "answer_4": "All of the mentioned",
+    "trueAnswer": "CSS is the language used to style the HTML documents"
+  },
+  {
+    "type": "css",
+    "title": "Which of the following tag is used to embed css in html page?",
+    "answer_1": "&lt;css&gt;",
+    "answer_2": "&lt;!DOCTYPE html&gt;",
+    "answer_3": "&lt;script&gt;",
+    "answer_4": "&lt;style&gt;",
+    "trueAnswer": "<style>"
+  },
+  {
+    "type": "css",
+    "title": "Which of the following CSS framework is used to create a responsive design?",
+    "answer_1": "django",
+    "answer_2": "rails",
+    "answer_3": "larawell",
+    "answer_4": "bootstrap",
+    "trueAnswer": "bootstrap"
+  },
+  {
+    "type": "css",
+    "title": "Which of the following are the CSS Extension Prefixes for Webkit?",
+    "answer_1": "-chrome",
+    "answer_2": "-web",
+    "answer_3": "-o-",
+    "answer_4": "-webkit",
+    "trueAnswer": "-webkit"
+  },
+  {
+    "type": "css",
+    "title": "Which of the following CSS style property is used to specify an italic text?",
+    "answer_1": "style",
+    "answer_2": "font",
+    "answer_3": "font-style",
+    "answer_4": "@font-face",
+    "trueAnswer": "font-style"
+  },
+  {
+    "type": "css",
+    "title": "Which of the following type of HTML tag is used to define an internal style sheet?",
+    "answer_1": "&lt;script&gt;",
+    "answer_2": "&lt;link&gt;",
+    "answer_3": "&lt;class&gt;",
+    "answer_4": "&lt;style&gt;",
+    "trueAnswer": "<style&gt>"
+  }
+]

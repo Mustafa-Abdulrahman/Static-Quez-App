@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="profile" />
+    <meta name="description" content="user profile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/navstyle.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------ -->
+    <nav>
+      <div class="container">
+        <h3 class="dropSideBar"><i class="fas fa-grip-lines"></i></h3>
+        <div class="logo">
+          <a href="profile.html"><img src="./imgs/logo.png" alt="" /></a>
+        </div>
+        <ul class="links">
+          <li><a class="active" href="profile.html">Profile</a></li>
+          <li class="dropList">
+            <a href="#">Quezs</a>
+            <ul>
+              <li><a href="./quezs/quez.html" class="chooseExam">HTML</a></li>
+              <li><a href="./quezs/quez.html" class="chooseExam">CSS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ------------------------------------------ -->
+    <header>
+      <div class="container">
+        <div class="data">
+          <h1>Hello, <span class="userName">Ahmed Albanna</span></h1>
+          <a class="active" href="profile.html">Profile</a>
+          <a href="quezs.html">> Quezs</a>
+        </div>
+        <div class="imgs">
+          <img src="./imgs/breadcrumb_shape01.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape02.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape03.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape04.svg" alt="" />
+          <img src="./imgs/breadcrumb_shape05.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ------------------- main page ------------------ -->
+    <div class="mainPage">
+      <!-- side bar -->
+      <div class="sideBar">
+        <!-- user information -->
+        <div class="user-data">
+          <div class="content">
+            <img src="./imgs/avatar2.png" alt="" />
+            <p class="userName">Ahmed Albanna</p>
+          </div>
+        </div>
+        <!-- user information -->
+        <div class="dashboard">
+          <h2>Dashboard</h2>
+          <ul>
+            <li class="active"><i class="fas fa-users fa-fw"></i> Over View</li>
+          </ul>
+        </div>
+      </div>
+      <!-- side bar -->
+      <div class="mainContent">
+        <!--  myDashBoard -->
+        <div class="myDashBoard">
+          <h3>My Dashboard</h3>
+          <!--  -->
+          <div class="boxes">
+            <div class="box">
+              <i class="fa fa-comment w3-xxxlarge"></i>
+              <span>52</span>
+              <p>Message</p>
+            </div>
+            <div class="box">
+              <i class="fa fa-eye w3-xxxlarge"></i>
+              <span>99</span>
+              <p>Views</p>
+            </div>
+            <div class="box">
+              <i class="fa fa-share-alt w3-xxxlarge"></i>
+              <span>32</span>
+              <p>Shares</p>
+            </div>
+            <div class="box">
+              <i class="fa fa-users w3-xxxlarge"></i>
+              <span>52</span>
+              <p>Users</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  myDashBoard -->
+        <!--  progress -->
+        <div class="progressSection">
+          <div class="div-skill">
+            <p>HTML</p>
+            <progress max="100" value="50" class="html"></progress
+            ><span>50%</span>
+          </div>
+          <div class="div-skill">
+            <p>CSS</p>
+            <progress max="100" value="50" class="css"></progress>
+            <span>50%</span>
+          </div>
+        </div>
+        <!--  progress -->
+      </div>
+    </div>
+
+    <script type="module" src="./js/profile.js"></script>
+  </body>
+</html>

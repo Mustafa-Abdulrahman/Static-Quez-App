@@ -1,0 +1,222 @@
+:root {
+  --back-color: #dbdbdb;
+  --padding: 0.8rem;
+  --padding-two: 0.5rem;
+  --main-color: #2b3499;
+  --main-trans: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--main-transition);
+}
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ----------------- */
+/* querz container */
+.quez-container {
+  width: 80%;
+  padding: var(--padding);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--back-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--padding);
+}
+
+.quez-container .quez-Seqtion,
+.quez-container .quez-sidebar {
+  width: calc(80% - var(--padding));
+  height: 100%;
+}
+.quez-container .quez-sidebar {
+  width: 20%;
+  background-color: white;
+}
+/* querz container */
+/* ---------------------------------------- */
+/* quez-Seqtion */
+.quez-container .quez-Seqtion .header-section {
+  padding: var(--padding);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--padding);
+}
+.quez-container .quez-Seqtion .question-section {
+  padding: var(--padding);
+  background-color: white;
+}
+.quez-container .quez-Seqtion .question-section h1 {
+  margin-bottom: 1.5rem;
+}
+.quez-container .quez-Seqtion .question-section .answer {
+  padding: var(--padding);
+}
+.quez-container .quez-Seqtion .question-section .answer:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+.quez-container .quez-Seqtion .question-section .answer input {
+  margin-right: var(--padding-two);
+}
+.quez-container .quez-Seqtion .question-section .answer:has(input:checked) {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 500;
+}
+.quez-container .quez-Seqtion .question-section .answer label {
+  position: relative;
+  cursor: pointer;
+  top: -2px;
+}
+.quez-container .quez-Seqtion .next-button,
+.quez-container .quez-Seqtion .submit-button,
+.quez-container .quez-Seqtion .mark-btn {
+  display: block;
+  background-color: var(--main-color);
+  padding: var(--padding);
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  margin-top: var(--padding);
+
+  cursor: pointer;
+}
+.quez-container .quez-Seqtion .submit-button.disable,
+.quez-container .quez-Seqtion .next-button.disable {
+  pointer-events: none;
+  background-color: #eee;
+  color: black;
+}
+.quez-container .quez-Seqtion .next-button,
+.quez-container .quez-Seqtion .mark-btn {
+  width: 25%;
+
+  margin-bottom: 2rem;
+  background-color: rgb(189, 123, 0);
+}
+/* -------------------------- quez-sidebar */
+.quez-container .quez-sidebar .bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-two);
+  flex-flow: wrap;
+  padding: var(--padding);
+}
+.quez-container .quez-sidebar .bullets li {
+  transition: var(--main-trans);
+  cursor: pointer;
+  width: calc((100% - 1.5rem) / 4);
+  height: 28px;
+  line-height: 30px;
+  text-align: center;
+  background-color: var(--back-color);
+}
+.quez-container .quez-sidebar .bullets li.active {
+  color: white;
+  background-color: var(--main-color);
+}
+@media (max-width: 800px) {
+  .quez-container .quez-sidebar .bullets li {
+    width: calc((100% - 1rem) / 3);
+  }
+}
+@media (max-width: 600px) {
+  .quez-container .quez-sidebar .bullets li {
+    width: calc(100%);
+  }
+}
+.quez-container .quez-sidebar .timer {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bolder;
+}
+/* ---------------------- completed question */
+.quez-container .quez-sidebar .completed {
+  background-color: var(--back-color);
+  padding-top: var(--padding);
+}
+.quez-container .quez-sidebar .completed h4 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+.quez-container .quez-sidebar .completed ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: var(--padding-two);
+}
+.quez-container .quez-sidebar .completed ul li {
+  transition: var(--main-trans);
+  cursor: pointer;
+  width: calc((100% - 1.5rem) / 4);
+  height: 28px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+/* -------------- mark btn */
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.marked {
+  width: 100%;
+  padding: 4rem 0.8rem;
+  background-color: var(--back-color);
+}
+.marked ul {
+  width: 100%;
+}
+.marked ul li {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 6px;
+}

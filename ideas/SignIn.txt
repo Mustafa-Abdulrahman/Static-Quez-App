@@ -1,0 +1,7 @@
+1- Make An Array To Take The Data From Local Torage
+
+-- Click Sign In Button
+2- Function Search Email Input Value Inside Array
+
+3- Function Create Object And Save In Local Storage ( UserName & email)
+4- Function Create Status In Local Storage With True

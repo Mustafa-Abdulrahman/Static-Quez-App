@@ -1,0 +1,13 @@
+1- Make Validation Function For All Inputs
+ a- Check Using Reguler Expresion If Input Is Valid
+ b- Change Span Value To Valid Or Not Valid
+	When It Work?
+	 a- In Any Input Action Take On Inputs
+	 b- When I Use Click Button
+
+2- Create Submit Function
+ a- Check If All Inputs are valid
+ b- Check If The Email Adress Already In Local Storage
+ c- Add New User In Local Storage
+ d- Pop Up Valid Sign Up
+ e- Go to sign in page and cannot back
